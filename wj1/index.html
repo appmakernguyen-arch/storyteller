@@ -1,0 +1,186 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Listen: The Wolf and the Jackal · Book 1</title>
+<meta name="description" content="Listen to The Wolf and the Jackal, Book 1: The Frozen Lake. Read aloud in English and Vietnamese.">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&display=swap" rel="stylesheet">
+<style>
+:root { --bg:#FFF7EA; --ink:#2E3A59; --wolf:#5B7DB1; --jackal:#E8933A; --navy:#17426B; }
+* { box-sizing:border-box; }
+body { margin:0; background:var(--bg); color:var(--ink); font-family:'Baloo 2', system-ui, sans-serif; }
+header { background:linear-gradient(180deg,#D9ECFA,var(--bg)); text-align:center; padding:18px 16px 8px; }
+header img { width:min(260px,60vw); border-radius:18px; border:6px solid #fff; box-shadow:0 10px 24px rgba(23,66,107,.25); }
+h1 { margin:10px 0 0; font-size:28px; line-height:1.1; color:var(--navy); }
+h1 .w { color:var(--wolf); } h1 .j { color:var(--jackal); }
+.sub { font-size:18px; color:#3A8FC9; font-weight:800; }
+.lang { display:flex; gap:8px; justify-content:center; margin:14px 0 8px; }
+.lang button { font:inherit; font-weight:800; font-size:16px; border:3px solid var(--navy); background:#fff; color:var(--navy); border-radius:30px; padding:6px 14px; }
+.lang button.on { background:var(--navy); color:#fff; }
+.all { font:inherit; font-weight:800; font-size:20px; background:var(--jackal); color:#fff; border:0; border-radius:40px; padding:12px 26px; margin:6px 0 4px; box-shadow:0 6px 14px rgba(232,147,58,.4); }
+main { max-width:720px; margin:0 auto; padding:8px 16px 140px; }
+.card { display:flex; gap:14px; background:#fff; border-radius:20px; padding:12px; margin:12px 0; box-shadow:0 4px 14px rgba(23,66,107,.1); scroll-margin-top:12px; border:3px solid transparent; }
+.card.now { border-color:var(--jackal); }
+.card img { width:110px; height:150px; object-fit:cover; border-radius:12px; flex:none; background:#eee; }
+.txt { flex:1; min-width:0; }
+.lbl { font-weight:800; color:var(--jackal); font-size:15px; }
+p { margin:4px 0; font-size:16px; line-height:1.35; font-weight:600; }
+p.en { color:#4a5a78; }
+body.en p.vn { display:none; }
+.play { font:inherit; font-weight:800; font-size:16px; background:var(--wolf); color:#fff; border:0; border-radius:30px; padding:6px 18px; margin-top:6px; }
+.bar { position:fixed; left:0; right:0; bottom:0; background:#fff; box-shadow:0 -6px 20px rgba(0,0,0,.12); padding:10px 16px 16px; text-align:center; }
+.bar .now { font-weight:800; font-size:15px; }
+audio { width:100%; max-width:640px; }
+footer { text-align:center; font-size:13px; color:#8a8a8a; padding:10px; }
+</style></head><body class="vi">
+<header>
+  <img src="img/cover.jpg" alt="The Wolf and the Jackal book cover">
+  <h1>Sói và Chó Rừng<br><span class="w">The Wolf</span> and the <span class="j">Jackal</span></h1>
+  <div class="sub">Book 1: The Frozen Lake · Hồ Băng</div>
+  <div class="lang"><button data-l="vi">Tiếng Việt + English</button><button data-l="en">English</button></div>
+  <button class="all" id="all">▶ Play the whole story</button>
+</header>
+<main>
+<section class="card" id="cover" data-k="title">
+  <img src="img/cover.jpg" alt="" loading="lazy">
+  <div class="txt"><div class="lbl">Cover</div>
+  <p class="vn">Sói và Chó Rừng. Tập một: Hồ Băng. Một cuốn truyện tranh tô màu cho bé!</p><p class="en">The Wolf and the Jackal. Book one: The Frozen Lake. A coloring storybook for kids!</p>
+  <button class="play" data-k="title">▶ Play</button></div>
+</section>
+<section class="card" id="1" data-k="p01">
+  <img src="img/p01.jpg" alt="" loading="lazy">
+  <div class="txt"><div class="lbl">Page 1 · Trang 1</div>
+  <p class="vn">Mùa đông tới rồi. Tuyết phủ trắng cả khu rừng, gió lạnh ơi là lạnh.</p><p class="en">It was winter. Snow covered the forest, and the wind was cold, cold, cold.</p>
+  <button class="play" data-k="p01">▶ Play</button></div>
+</section>
+<section class="card" id="2" data-k="p02">
+  <img src="img/p02.jpg" alt="" loading="lazy">
+  <div class="txt"><div class="lbl">Page 2 · Trang 2</div>
+  <p class="vn">Sói đi hoài, đi hoài để kiếm đồ ăn, mà chẳng kiếm được gì hết. Bụng Sói kêu ọc ọc!</p><p class="en">Wolf walked and walked, looking for food. He found nothing at all. His tummy rumbled. Grrrumble!</p>
+  <button class="play" data-k="p02">▶ Play</button></div>
+</section>
+<section class="card" id="3" data-k="p03">
+  <img src="img/p03.jpg" alt="" loading="lazy">
+  <div class="txt"><div class="lbl">Page 3 · Trang 3</div>
+  <p class="vn">Rồi Sói thấy Chó Rừng đang ngồi trên mặt hồ đóng băng. Chó Rừng khoét một cái lỗ tròn trên băng rồi thả đuôi xuống nước. Bên cạnh có một đống cá nho nhỏ.</p><p class="en">Then Wolf saw Jackal sitting on the frozen lake. Jackal had made a round hole in the ice and dipped his tail into the water. Beside him was a little pile of fish.</p>
+  <button class="play" data-k="p03">▶ Play</button></div>
+</section>
+<section class="card" id="4" data-k="p04">
+  <img src="img/p04.jpg" alt="" loading="lazy">
+  <div class="txt"><div class="lbl">Page 4 · Trang 4</div>
+  <p class="vn">&quot;Chó Rừng ơi, tui đói bụng quá,&quot; Sói nói. &quot;Cho tui xin một con cá được không?&quot;<br>&quot;Được chứ!&quot; Chó Rừng cười tươi. &quot;Mà nếu bạn phụ tui, tụi mình sẽ bắt được nhiều cá hơn nữa.&quot;</p><p class="en">&quot;Jackal, I&#x27;m so hungry,&quot; said Wolf. &quot;May I have a fish?&quot;<br>&quot;Of course!&quot; said Jackal with a big smile. &quot;But if you help me, we can catch even more.&quot;</p>
+  <button class="play" data-k="p04">▶ Play</button></div>
+</section>
+<section class="card" id="5" data-k="p05">
+  <img src="img/p05.jpg" alt="" loading="lazy">
+  <div class="txt"><div class="lbl">Page 5 · Trang 5</div>
+  <p class="vn">&quot;Sao bạn cần tui?&quot; Sói hỏi.<br>&quot;Đuôi tui ngắn lắm,&quot; Chó Rừng nói. &quot;Đuôi bạn vừa dài vừa khỏe. Bạn sẽ với tới mấy con cá bự ở dưới sâu!&quot;</p><p class="en">&quot;Why do you need me?&quot; asked Wolf.<br>&quot;My tail is short,&quot; said Jackal. &quot;Your tail is long and strong. You can reach the big fish deep down below!&quot;</p>
+  <button class="play" data-k="p05">▶ Play</button></div>
+</section>
+<section class="card" id="6" data-k="p06">
+  <img src="img/p06.jpg" alt="" loading="lazy">
+  <div class="txt"><div class="lbl">Page 6 · Trang 6</div>
+  <p class="vn">&quot;Được!&quot; Sói nói. Sói ngồi xuống và thả cái đuôi dài vào làn nước lạnh buốt.</p><p class="en">&quot;Okay!&quot; said Wolf. He sat down and put his long tail into the icy water.</p>
+  <button class="play" data-k="p06">▶ Play</button></div>
+</section>
+<section class="card" id="7" data-k="p07">
+  <img src="img/p07.jpg" alt="" loading="lazy">
+  <div class="txt"><div class="lbl">Page 7 · Trang 7</div>
+  <p class="vn">Bõm! Sói kéo lên một con cá.<br>&quot;Hoan hô! Bạn giỏi quá, Sói ơi!&quot; Chó Rừng vỗ tay reo lên.</p><p class="en">Splash! Wolf pulled out a fish.<br>&quot;Hooray! You&#x27;re amazing, Wolf!&quot; cheered Jackal, clapping his paws.</p>
+  <button class="play" data-k="p07">▶ Play</button></div>
+</section>
+<section class="card" id="8" data-k="p08">
+  <img src="img/p08.jpg" alt="" loading="lazy">
+  <div class="txt"><div class="lbl">Page 8 · Trang 8</div>
+  <p class="vn">Bõm! Thêm một con nữa. Bõm! Thêm con nữa! Lần nào Chó Rừng cũng vỗ tay khen. Đống cá càng lúc càng cao.</p><p class="en">Splash! Another fish. Splash! And another! Every time, Jackal clapped and cheered. The pile of fish grew bigger and bigger.</p>
+  <button class="play" data-k="p08">▶ Play</button></div>
+</section>
+<section class="card" id="9" data-k="p09">
+  <img src="img/p09.jpg" alt="" loading="lazy">
+  <div class="txt"><div class="lbl">Page 9 · Trang 9</div>
+  <p class="vn">Rồi Chó Rừng thì thầm: &quot;Sói ơi, bạn để đuôi dưới nước càng lâu thì cá càng bự.&quot;<br>&quot;Thiệt hả?&quot; Sói hỏi.<br>&quot;Thiệt mà!&quot; Chó Rừng nói.</p><p class="en">Then Jackal whispered, &quot;Wolf, the longer you keep your tail in the water, the bigger the fish will be.&quot;<br>&quot;Really?&quot; asked Wolf.<br>&quot;Really!&quot; said Jackal.</p>
+  <button class="play" data-k="p09">▶ Play</button></div>
+</section>
+<section class="card" id="10" data-k="p10">
+  <img src="img/p10.jpg" alt="" loading="lazy">
+  <div class="txt"><div class="lbl">Page 10 · Trang 10</div>
+  <p class="vn">Vậy là Sói ngồi chờ. Chờ hoài. Chờ hoài. Gió thổi vù vù, nước càng lúc càng lạnh.</p><p class="en">So Wolf waited. And waited. And waited. The wind blew, and the water grew colder and colder.</p>
+  <button class="play" data-k="p10">▶ Play</button></div>
+</section>
+<section class="card" id="11" data-k="p11">
+  <img src="img/p11.jpg" alt="" loading="lazy">
+  <div class="txt"><div class="lbl">Page 11 · Trang 11</div>
+  <p class="vn">Sau lưng Sói, Chó Rừng lén ôm HẾT đống cá rồi rón rén bỏ đi.</p><p class="en">Behind him, Jackal quietly picked up ALL the fish and began to tiptoe away.</p>
+  <button class="play" data-k="p11">▶ Play</button></div>
+</section>
+<section class="card" id="12" data-k="p12">
+  <img src="img/p12.jpg" alt="" loading="lazy">
+  <div class="txt"><div class="lbl">Page 12 · Trang 12</div>
+  <p class="vn">&quot;Ê! Chó Rừng! Bạn làm gì vậy?&quot; Sói kêu lên.<br>&quot;Mấy con cá này giờ là của tui rồi!&quot; Chó Rừng cười hí hí.</p><p class="en">&quot;Hey! Jackal! What are you doing?&quot; called Wolf.<br>&quot;Oh, these fish are mine now!&quot; laughed Jackal.</p>
+  <button class="play" data-k="p12">▶ Play</button></div>
+</section>
+<section class="card" id="13" data-k="p13">
+  <img src="img/p13.jpg" alt="" loading="lazy">
+  <div class="txt"><div class="lbl">Page 13 · Trang 13</div>
+  <p class="vn">Sói đứng bật dậy định đuổi theo. Nhưng… Ối! Sói không nhúc nhích được. Đuôi Sói bị đóng băng dính chặt rồi!</p><p class="en">Wolf jumped up to stop him. But… Oof! He couldn&#x27;t move. His tail was frozen in the ice!</p>
+  <button class="play" data-k="p13">▶ Play</button></div>
+</section>
+<section class="card" id="14" data-k="p14">
+  <img src="img/p14.jpg" alt="" loading="lazy">
+  <div class="txt"><div class="lbl">Page 14 · Trang 14</div>
+  <p class="vn">Sói ngồi giữa trời lạnh, bụng đói meo, nghĩ lại mọi chuyện.</p><p class="en">Wolf sat in the cold with an empty tummy and thought hard about what had happened.</p>
+  <button class="play" data-k="p14">▶ Play</button></div>
+</section>
+<section class="card" id="15" data-k="p15">
+  <img src="img/p15.jpg" alt="" loading="lazy">
+  <div class="txt"><div class="lbl">Page 15 · Trang 15</div>
+  <p class="vn">Sáng ra, mặt trời ló lên. Băng tan tí tách, tí tách… và cái đuôi của Sói được tự do!</p><p class="en">In the morning, the sun came out. The ice melted, drip, drop, drip… and Wolf&#x27;s tail was free!</p>
+  <button class="play" data-k="p15">▶ Play</button></div>
+</section>
+<section class="card" id="16" data-k="p16">
+  <img src="img/p16.jpg" alt="" loading="lazy">
+  <div class="txt"><div class="lbl">Page 16 · Trang 16</div>
+  <p class="vn">Sói nói: &quot;Lần sau, tui sẽ suy nghĩ kỹ trước khi nghe lời ngọt ngào. Và tui sẽ không làm hết mọi việc để người khác lấy hết phần thưởng nữa!&quot;</p><p class="en">Wolf said, &quot;Next time, I&#x27;ll think before I listen to sweet words. And I won&#x27;t do all the work while someone else takes all the fish!&quot;</p>
+  <button class="play" data-k="p16">▶ Play</button></div>
+</section>
+<section class="card" id="lesson" data-k="lesson">
+  <img src="img/lesson.jpg" alt="" loading="lazy">
+  <div class="txt"><div class="lbl">The lesson · Bài học</div>
+  <p class="vn">Hãy cẩn thận khi có người để bạn làm hết việc cực, rồi lấy hết phần thưởng.<br>Và hãy cẩn thận với lời khen quá ngọt. Người khen bạn quá nhiều có thể đang muốn điều gì đó từ bạn.</p><p class="en">Be careful when someone lets you do all the hard work, then takes all the reward.<br>And be careful of sweet words. Someone who praises you too much may want something from you.</p>
+  <button class="play" data-k="lesson">▶ Play</button></div>
+</section>
+<footer>Read-aloud for the printed coloring storybook. Voices are computer-generated.</footer>
+</main>
+<div class="bar"><div class="now" id="now">Tap ▶ to listen</div><audio id="au" controls preload="none"></audio></div>
+<script>
+const au = document.getElementById('au'), now = document.getElementById('now');
+let lang = 'vi', queue = [];
+try { lang = localStorage.getItem('wj-lang') || 'vi'; } catch (e) {}
+const keys = ["title", "p01", "p02", "p03", "p04", "p05", "p06", "p07", "p08", "p09", "p10", "p11", "p12", "p13", "p14", "p15", "p16", "lesson"];
+function setLang(l) {
+  lang = l; document.body.className = l;
+  document.querySelectorAll('.lang button').forEach(b => b.classList.toggle('on', b.dataset.l === l));
+  try { localStorage.setItem('wj-lang', l); } catch (e) {}
+}
+function mark(k) {
+  document.querySelectorAll('.card').forEach(c => c.classList.toggle('now', c.dataset.k === k));
+  const c = document.querySelector('.card[data-k="' + k + '"]');
+  if (c) { now.textContent = '▶ ' + c.querySelector('.lbl').textContent; }
+}
+function play(k, rest) {
+  queue = rest || []; au.src = 'audio/' + lang + '/' + k + '.mp3'; mark(k);
+  au.play().catch(() => { now.textContent = 'Tap ▶ below to start'; });
+}
+au.addEventListener('ended', () => { if (queue.length) { const k = queue.shift(); play(k, queue); document.querySelector('.card[data-k="' + k + '"]').scrollIntoView({behavior:'smooth'}); } });
+document.querySelectorAll('.lang button').forEach(b => b.onclick = () => setLang(b.dataset.l));
+document.querySelectorAll('.play').forEach(b => b.onclick = () => play(b.dataset.k));
+document.getElementById('all').onclick = () => play(keys[0], keys.slice(1));
+setLang(lang);
+function fromHash() {
+  const h = location.hash.replace('#', '');
+  if (!h) return;
+  const k = h === 'cover' ? 'title' : h === 'lesson' ? 'lesson' : 'p' + String(parseInt(h, 10)).padStart(2, '0');
+  const c = document.querySelector('.card[data-k="' + k + '"]');
+  if (c) { c.scrollIntoView(); mark(k); au.src = 'audio/' + lang + '/' + k + '.mp3'; now.textContent = '▶ Tap play: ' + c.querySelector('.lbl').textContent; }
+}
+window.addEventListener('hashchange', fromHash); fromHash();
+</script>
+</body></html>
