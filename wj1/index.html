@@ -154,6 +154,7 @@ footer { text-align:center; font-size:13px; color:#8a8a8a; padding:10px; }
 const au = document.getElementById('au'), now = document.getElementById('now');
 let lang = 'vi', queue = [];
 try { lang = localStorage.getItem('wj-lang') || 'vi'; } catch (e) {}
+const ql = new URLSearchParams(location.search).get('l'); if (ql === 'en' || ql === 'vi') lang = ql;  // English book QR codes use ?l=en
 const keys = ["title", "p01", "p02", "p03", "p04", "p05", "p06", "p07", "p08", "p09", "p10", "p11", "p12", "p13", "p14", "p15", "p16", "lesson"];
 function setLang(l) {
   lang = l; document.body.className = l;
