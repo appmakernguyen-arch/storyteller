@@ -1,0 +1,224 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Listen: The Wolf and the Jackal · On the Farm</title>
+<meta name="description" content="Listen to The Wolf and the Jackal: On the Farm. Read aloud in English.">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&display=swap" rel="stylesheet">
+<style>
+:root { --bg:#FFF7EA; --ink:#2E3A59; --wolf:#5B7DB1; --jackal:#E8933A; --navy:#17426B; }
+* { box-sizing:border-box; }
+body { margin:0; background:var(--bg); color:var(--ink); font-family:'Baloo 2', system-ui, sans-serif; }
+header { background:linear-gradient(180deg,#D9ECFA,var(--bg)); text-align:center; padding:18px 16px 8px; }
+header img { width:min(260px,60vw); border-radius:18px; border:6px solid #fff; box-shadow:0 10px 24px rgba(23,66,107,.25); }
+.vid { max-width:min(360px,86vw); margin:0 auto; }
+.vid video { width:100%; aspect-ratio:9/16; background:#17426B; border-radius:18px; border:6px solid #fff; box-shadow:0 10px 24px rgba(23,66,107,.25); display:block; }
+.vcap { font-weight:800; color:var(--navy); font-size:16px; margin-top:6px; }
+h1 { margin:10px 0 0; font-size:28px; line-height:1.1; color:var(--navy); }
+h1 .w { color:var(--wolf); } h1 .j { color:var(--jackal); }
+.sub { font-size:18px; color:#3A8FC9; font-weight:800; }
+.all { font:inherit; font-weight:800; font-size:20px; background:var(--jackal); color:#fff; border:0; border-radius:40px; padding:12px 26px; margin:6px 0 4px; box-shadow:0 6px 14px rgba(232,147,58,.4); }
+main { max-width:720px; margin:0 auto; padding:8px 16px 140px; }
+.card { display:flex; gap:14px; background:#fff; border-radius:20px; padding:12px; margin:12px 0; box-shadow:0 4px 14px rgba(23,66,107,.1); scroll-margin-top:12px; border:3px solid transparent; }
+.card.now { border-color:var(--jackal); }
+.card img { width:110px; height:150px; object-fit:cover; border-radius:12px; flex:none; background:#eee; }
+.txt { flex:1; min-width:0; }
+.lbl { font-weight:800; color:var(--jackal); font-size:15px; }
+p { margin:4px 0; font-size:16px; line-height:1.35; font-weight:600; }
+p.en { color:#4a5a78; }
+.play { font:inherit; font-weight:800; font-size:16px; background:var(--wolf); color:#fff; border:0; border-radius:30px; padding:6px 18px; margin-top:6px; }
+.bar { position:fixed; left:0; right:0; bottom:0; background:#fff; box-shadow:0 -6px 20px rgba(0,0,0,.12); padding:10px 16px 16px; text-align:center; }
+.bar .now { font-weight:800; font-size:15px; }
+audio { width:100%; max-width:640px; }
+footer { text-align:center; font-size:13px; color:#8a8a8a; padding:10px; }
+.req { max-width:420px; margin:10px auto 4px; background:#fff; border-radius:20px; padding:12px 16px; box-shadow:0 4px 14px rgba(23,66,107,.12); }
+.req b { color:var(--navy); font-size:17px; display:block; }
+.req span { font-size:15px; font-weight:600; color:#4a5a78; display:block; margin:2px 0 8px; }
+.reqbtn { display:inline-block; font-weight:800; font-size:19px; text-decoration:none; background:var(--navy); color:#fff; border-radius:40px; padding:10px 26px; box-shadow:0 6px 14px rgba(23,66,107,.3); }
+</style></head><body class="en">
+<header>
+  <div class="vid">
+    <video class="v-en" src="video/en.mp4" poster="img/cover.jpg" controls playsinline preload="none"></video>
+    <div class="vcap">▶ Watch the whole story in colour</div>
+  </div>
+  <h1><span class="w">The Wolf</span> and the <span class="j">Jackal</span></h1>
+  <div class="sub">On the Farm</div>
+  <button class="all" id="all">▶ Play the whole story</button>
+  <div class="req" id="request-app">
+    <b>Bought the book on Amazon?</b>
+    <span>Get our read-aloud app: words light up as they are read, English + Vietnamese, works offline. Message us a photo of your Amazon order and we'll send you a free code.</span>
+    <a class="reqbtn" href="https://www.tiktok.com/@story.books87" target="_blank" rel="noopener">📱 Request the app</a>
+  </div>
+</header>
+<main>
+<section class="card" id="cover" data-k="title">
+  <img src="img/cover.jpg" alt="" loading="lazy">
+  <div class="txt"><div class="lbl">Cover</div>
+  <p class="en">The Wolf and the Jackal. On the Farm. A coloring storybook for kids!</p>
+  <button class="play" data-k="title">▶ Play</button></div>
+</section>
+<section class="card" id="1" data-k="p01">
+  <img src="img/p01.jpg" alt="" loading="lazy">
+  <div class="txt"><div class="lbl">Page 1</div>
+  <p class="en">Winter came again. White snow fell everywhere, and the wind blew icy cold.</p>
+  <button class="play" data-k="p01">▶ Play</button></div>
+</section>
+<section class="card" id="2" data-k="p02">
+  <img src="img/p02.jpg" alt="" loading="lazy">
+  <div class="txt"><div class="lbl">Page 2</div>
+  <p class="en">Wolf was hungry again. He looked for food all day, but he found nothing. His tummy rumbled. Grrrumble!</p>
+  <button class="play" data-k="p02">▶ Play</button></div>
+</section>
+<section class="card" id="3" data-k="p03">
+  <img src="img/p03.jpg" alt="" loading="lazy">
+  <div class="txt"><div class="lbl">Page 3</div>
+  <p class="en">Then Wolf met Jackal. Jackal looked round and happy, and he was licking his lips.</p>
+  <button class="play" data-k="p03">▶ Play</button></div>
+</section>
+<section class="card" id="4" data-k="p04">
+  <img src="img/p04.jpg" alt="" loading="lazy">
+  <div class="txt"><div class="lbl">Page 4</div>
+  <p class="en">&quot;Jackal,&quot; asked Wolf, &quot;everyone is hungry in winter. Why are you never hungry?&quot;<br>Jackal smiled a sneaky smile. &quot;Tonight, I&#x27;ll show you.&quot;</p>
+  <button class="play" data-k="p04">▶ Play</button></div>
+</section>
+<section class="card" id="5" data-k="p05">
+  <img src="img/p05.jpg" alt="" loading="lazy">
+  <div class="txt"><div class="lbl">Page 5</div>
+  <p class="en">That night, the moon was big and bright. Jackal led Wolf through the forest, softly, on tiptoe.</p>
+  <button class="play" data-k="p05">▶ Play</button></div>
+</section>
+<section class="card" id="6" data-k="p06">
+  <img src="img/p06.jpg" alt="" loading="lazy">
+  <div class="txt"><div class="lbl">Page 6</div>
+  <p class="en">They came to a farm. There was a red barn, a wooden fence, and a little henhouse.</p>
+  <button class="play" data-k="p06">▶ Play</button></div>
+</section>
+<section class="card" id="7" data-k="p07">
+  <img src="img/p07.jpg" alt="" loading="lazy">
+  <div class="txt"><div class="lbl">Page 7</div>
+  <p class="en">&quot;Shh!&quot; Jackal pointed down. Under the fence was a little hole. &quot;I dug it myself!&quot;</p>
+  <button class="play" data-k="p07">▶ Play</button></div>
+</section>
+<section class="card" id="8" data-k="p08">
+  <img src="img/p08.jpg" alt="" loading="lazy">
+  <div class="txt"><div class="lbl">Page 8</div>
+  <p class="en">There was another hole at the bottom of the henhouse. &quot;Every night I crawl in here,&quot; Jackal whispered, &quot;and take a chicken.&quot;</p>
+  <button class="play" data-k="p08">▶ Play</button></div>
+</section>
+<section class="card" id="9" data-k="p09">
+  <img src="img/p09.jpg" alt="" loading="lazy">
+  <div class="txt"><div class="lbl">Page 9</div>
+  <p class="en">&quot;Can I do it too?&quot; asked Wolf. Jackal thought for a moment, then nodded. &quot;Yes! Let&#x27;s do it together.&quot;</p>
+  <button class="play" data-k="p09">▶ Play</button></div>
+</section>
+<section class="card" id="10" data-k="p10">
+  <img src="img/p10.jpg" alt="" loading="lazy">
+  <div class="txt"><div class="lbl">Page 10</div>
+  <p class="en">Jackal slipped through easily. Wolf had to squeeze and squeeze… and he just fit!</p>
+  <button class="play" data-k="p10">▶ Play</button></div>
+</section>
+<section class="card" id="11" data-k="p11">
+  <img src="img/p11.jpg" alt="" loading="lazy">
+  <div class="txt"><div class="lbl">Page 11</div>
+  <p class="en">Inside, the chickens were fast asleep. Wolf and Jackal had a big feast, then crept quietly back out.</p>
+  <button class="play" data-k="p11">▶ Play</button></div>
+</section>
+<section class="card" id="12" data-k="p12">
+  <img src="img/p12.jpg" alt="" loading="lazy">
+  <div class="txt"><div class="lbl">Page 12</div>
+  <p class="en">The next night, and the night after that, they came back again. Wolf&#x27;s tummy grew rounder and rounder.</p>
+  <button class="play" data-k="p12">▶ Play</button></div>
+</section>
+<section class="card" id="13" data-k="p13">
+  <img src="img/p13.jpg" alt="" loading="lazy">
+  <div class="txt"><div class="lbl">Page 13</div>
+  <p class="en">Then came the last night. They crawled into the henhouse again.<br>Jackal ate just a little, and he kept one eye on the hole.</p>
+  <button class="play" data-k="p13">▶ Play</button></div>
+</section>
+<section class="card" id="14" data-k="p14">
+  <img src="img/p14.jpg" alt="" loading="lazy">
+  <div class="txt"><div class="lbl">Page 14</div>
+  <p class="en">But Wolf ate, and ate, and ate. His tummy grew as round as a ball.</p>
+  <button class="play" data-k="p14">▶ Play</button></div>
+</section>
+<section class="card" id="15" data-k="p15">
+  <img src="img/p15.jpg" alt="" loading="lazy">
+  <div class="txt"><div class="lbl">Page 15</div>
+  <p class="en">&quot;Wolf, don&#x27;t eat so much!&quot; Jackal whispered. &quot;We have to fit back through that hole!&quot;<br>&quot;Just one more bite,&quot; said Wolf. And one more… and one more…</p>
+  <button class="play" data-k="p15">▶ Play</button></div>
+</section>
+<section class="card" id="16" data-k="p16">
+  <img src="img/p16.jpg" alt="" loading="lazy">
+  <div class="txt"><div class="lbl">Page 16</div>
+  <p class="en">&quot;Bawk!&quot; A hen woke up. Then the whole henhouse squawked: &quot;Bawk! Bawk! Bawk!&quot;</p>
+  <button class="play" data-k="p16">▶ Play</button></div>
+</section>
+<section class="card" id="17" data-k="p17">
+  <img src="img/p17.jpg" alt="" loading="lazy">
+  <div class="txt"><div class="lbl">Page 17</div>
+  <p class="en">&quot;Run!&quot; said Jackal. His tummy was still small, so he slipped out of the hole in a flash.</p>
+  <button class="play" data-k="p17">▶ Play</button></div>
+</section>
+<section class="card" id="18" data-k="p18">
+  <img src="img/p18.jpg" alt="" loading="lazy">
+  <div class="txt"><div class="lbl">Page 18</div>
+  <p class="en">Wolf pushed his head out. Then his shoulders. Then… STUCK! His big tummy would not fit through.<br>&quot;I&#x27;m stuck!&quot; cried Wolf.</p>
+  <button class="play" data-k="p18">▶ Play</button></div>
+</section>
+<section class="card" id="19" data-k="p19">
+  <img src="img/p19.jpg" alt="" loading="lazy">
+  <div class="txt"><div class="lbl">Page 19</div>
+  <p class="en">A light came on in the house. The farmer stepped outside in his pyjamas, holding a slingshot.</p>
+  <button class="play" data-k="p19">▶ Play</button></div>
+</section>
+<section class="card" id="20" data-k="p20">
+  <img src="img/p20.jpg" alt="" loading="lazy">
+  <div class="txt"><div class="lbl">Page 20</div>
+  <p class="en">Ping! A little pebble hit Wolf right on the bottom. &quot;Ouch!&quot; Ping! &quot;Ouch!&quot;<br>Wolf wiggled and wiggled… and popped out of the hole!</p>
+  <button class="play" data-k="p20">▶ Play</button></div>
+</section>
+<section class="card" id="21" data-k="p21">
+  <img src="img/p21.jpg" alt="" loading="lazy">
+  <div class="txt"><div class="lbl">Page 21</div>
+  <p class="en">Wolf ran home through the snow. His bottom was sore and his tummy ached. Jackal was long gone.</p>
+  <button class="play" data-k="p21">▶ Play</button></div>
+</section>
+<section class="card" id="22" data-k="p22">
+  <img src="img/p22.jpg" alt="" loading="lazy">
+  <div class="txt"><div class="lbl">Page 22</div>
+  <p class="en">Wolf sat down and thought. &quot;Taking things that aren&#x27;t mine is wrong. And taking too much only brings trouble.&quot;</p>
+  <button class="play" data-k="p22">▶ Play</button></div>
+</section>
+<section class="card" id="lesson" data-k="lesson">
+  <img src="img/lesson.jpg" alt="" loading="lazy">
+  <div class="txt"><div class="lbl">The lesson</div>
+  <p class="en">Never steal. What belongs to someone else is not yours to take.<br>And don&#x27;t take more than you need.</p>
+  <button class="play" data-k="lesson">▶ Play</button></div>
+</section>
+<footer>Read-aloud for the printed coloring storybook. Voices are computer-generated.</footer>
+</main>
+<div class="bar"><div class="now" id="now">Tap ▶ to listen</div><audio id="au" controls preload="none"></audio></div>
+<script>
+const au = document.getElementById('au'), now = document.getElementById('now');
+const lang = 'en'; let queue = [];  // English only; old ?l=en QR links still land here
+const keys = ["title", "p01", "p02", "p03", "p04", "p05", "p06", "p07", "p08", "p09", "p10", "p11", "p12", "p13", "p14", "p15", "p16", "p17", "p18", "p19", "p20", "p21", "p22", "lesson"];
+function mark(k) {
+  document.querySelectorAll('.card').forEach(c => c.classList.toggle('now', c.dataset.k === k));
+  const c = document.querySelector('.card[data-k="' + k + '"]');
+  if (c) { now.textContent = '▶ ' + c.querySelector('.lbl').textContent; }
+}
+function play(k, rest) {
+  queue = rest || []; au.src = 'audio/' + lang + '/' + k + '.mp3'; mark(k);
+  au.play().catch(() => { now.textContent = 'Tap ▶ below to start'; });
+}
+au.addEventListener('ended', () => { if (queue.length) { const k = queue.shift(); play(k, queue); document.querySelector('.card[data-k="' + k + '"]').scrollIntoView({behavior:'smooth'}); } });
+document.querySelectorAll('.play').forEach(b => b.onclick = () => play(b.dataset.k));
+document.getElementById('all').onclick = () => play(keys[0], keys.slice(1));
+function fromHash() {
+  const h = location.hash.replace('#', '');
+  if (!h) return;
+  const k = h === 'cover' ? 'title' : h === 'lesson' ? 'lesson' : 'p' + String(parseInt(h, 10)).padStart(2, '0');
+  const c = document.querySelector('.card[data-k="' + k + '"]');
+  if (c) { c.scrollIntoView(); mark(k); au.src = 'audio/' + lang + '/' + k + '.mp3'; now.textContent = '▶ Tap play: ' + c.querySelector('.lbl').textContent; }
+}
+window.addEventListener('hashchange', fromHash); fromHash();
+</script>
+</body></html>
